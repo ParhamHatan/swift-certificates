@@ -16,7 +16,7 @@ public struct UnverifiedCertificateChain: Sendable, Hashable {
     @usableFromInline
     var certificates: [Certificate]
 
-    init(_ certificates: [Certificate]) {
+    public init(_ certificates: [Certificate]) {
         precondition(!certificates.isEmpty)
         self.certificates = certificates
     }
